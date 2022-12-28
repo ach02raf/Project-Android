@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/drawerlayout"
+tools:context=".BlogPage">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgBlog"
+                android:layout_width="425dp"
+                android:layout_height="227dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/_021_10_13_16_41_41" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="540dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/login_bg_form"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imgBlog">
+
+                <TextView
+                    android:id="@+id/blogText"
+                    android:layout_width="374dp"
+                    android:layout_height="149dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginEnd="29dp"
+                    android:text="Pulvinar torquent eget maecenas.              Leo mauris vestibulum.  Nam diam dolor montes mi neque.              Ullamcorper pulvinar leo faucibus mi dis nibh lectus eget tincidunt nulla             praesent aliquet sit suspendisse. Nunc sollicitudin nullam adipiscing nibh suspendisse.              Ac pharetra nunc. Nec sit laoreet. Est sollicitudin purus in malesuada cursus a eu             ante ante suscipit nunc vel vitae varius. Id imperdiet praesent.              Rhoncus dui cras. Donec nibh id nisl odio nascetur.              In venenatis facilisis."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/blogDate" />
+
+                <TextView
+                    android:id="@+id/blogDate"
+                    android:layout_width="122dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="16dp"
+                    android:text="11/12/2022"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="normal|italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/blogName" />
+
+                <TextView
+                    android:id="@+id/blogName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="16dp"
+                    android:outlineSpotShadowColor="#656565"
+                    android:shadowColor="#535050"
+                    android:text="Title"
+                    android:textColor="@color/black"
+                    android:textSize="34sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/delet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="156dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="165dp"
+                    android:background="#009688"
+                    android:backgroundTint="#009688"
+                    android:text="DELETE"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/blogText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

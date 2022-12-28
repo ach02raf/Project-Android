@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single"  >
+
+        <item
+            android:id="@+id/Nan_home"
+            android:title="home"
+            android:onClick="ClickDashboard"
+            android:icon="@drawable/ic_baseline_home_24"
+          />
+        <item
+            android:id="@+id/action_done"
+            android:title="profile"
+            android:icon="@drawable/ic_baseline_tag_faces_24"
+            />
+    </group>
+
+    <group android:checkableBehavior="single"  >
+
+        <item
+            android:id="@+id/action_settingss"
+            android:title="home"
+            android:icon="@drawable/ic_baseline_favorite_24"
+           />
+        <item
+            android:id="@+id/action_donse"
+            android:title="profile"
+          />
+    </group>
+
+
+</menu>
